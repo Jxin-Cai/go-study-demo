@@ -1,8 +1,5 @@
-package main
+package 数组
 
-func main() {
-
-}
 func moveZeroes1(nums []int) {
 	if nums == nil {
 		return

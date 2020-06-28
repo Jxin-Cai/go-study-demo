@@ -1,8 +1,5 @@
-package main
+package 数组
 
-func main() {
-
-}
 func twoSum(nums []int, target int) []int {
 	cache := make(map[int]int)
 	for i, v := range nums {

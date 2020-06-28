@@ -1,12 +1,5 @@
-package main
+package 数组
 
-func main() {
-	a := []int{1, 2, 3, 0, 0, 0}
-	b := 3
-	c := []int{2, 5, 6}
-	d := 3
-	merge(a, b, c, d)
-}
 func merge(nums1 []int, m int, nums2 []int, n int) {
 	if n == 0 {
 		return

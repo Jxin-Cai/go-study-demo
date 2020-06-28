@@ -1,8 +1,5 @@
-package main
+package 数组
 
-func main() {
-
-}
 func plusOne(digits []int) []int {
 	if 0 == len(digits) {
 		return []int{1}
