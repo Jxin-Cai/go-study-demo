@@ -9,17 +9,17 @@ var ret []int
 
 func postorder(root *Node) []int {
 	ret = []int{}
-	addNode(root)
+	laterNode(root)
 	return ret
 }
 
-func addNode(node *Node) {
+func laterNode(node *Node) {
 	if node == nil {
 		return
 	}
 
 	for _, v := range node.Children {
-		addNode(v)
+		laterNode(v)
 	}
 	ret = append(ret, node.Val)
 }

@@ -9,16 +9,16 @@ var ret []int
 
 func preorder(root *Node) []int {
 	ret = []int{}
-	addNode(root)
+	frontNode(root)
 	return ret
 }
 
-func addNode(node *Node) {
+func frontNode(node *Node) {
 	if node == nil {
 		return
 	}
 	ret = append(ret, node.Val)
 	for _, v := range node.Children {
-		addNode(v)
+		frontNode(v)
 	}
 }
