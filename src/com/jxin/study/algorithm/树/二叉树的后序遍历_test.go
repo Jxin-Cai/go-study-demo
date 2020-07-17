@@ -1,13 +1,5 @@
 package 树
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
-var ret []int
-
 func postorderTraversal(root *TreeNode) []int {
 	ret = []int{}
 	laterFirst(root)

@@ -8,11 +8,6 @@ package 树
  *     Right *ListNode
  * }
  */
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
 
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	if root == nil || root.Val == p.Val || root.Val == q.Val {

@@ -1,12 +1,5 @@
 package 树
 
-type Node struct {
-	Val      int
-	Children []*Node
-}
-
-var ret []int
-
 func preorder(root *Node) []int {
 	ret = []int{}
 	frontNode(root)

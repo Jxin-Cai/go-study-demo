@@ -1,11 +1,6 @@
 package 树
 
-type Node struct {
-	Val      int
-	Children []*Node
-}
-
-var ret [][]int
+var retArr [][]int
 
 func levelOrder1(root *Node) [][]int {
 	if root == nil {
@@ -38,19 +33,19 @@ func levelOrder2(root *Node) [][]int {
 	if root == nil {
 		return nil
 	}
-	ret = [][]int{}
+	retArr = [][]int{}
 	levelNode(root, 0)
-	return ret
+	return retArr
 }
 
 func levelNode(node *Node, level int) {
 	if node == nil {
 		return
 	}
-	if len(ret) == level {
-		ret = append(ret, []int{})
+	if len(retArr) == level {
+		retArr = append(retArr, []int{})
 	}
-	ret[level] = append(ret[level], node.Val)
+	retArr[level] = append(retArr[level], node.Val)
 	for _, v := range node.Children {
 		levelNode(v, level+1)
 	}
