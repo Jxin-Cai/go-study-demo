@@ -3,12 +3,12 @@ package 位运算
 import "testing"
 
 func TestQueen(t *testing.T) {
-	solveNQueens(4)
+	totalNQueens(4)
 }
 
 var ret int
 
-func solveNQueens(n int) int {
+func totalNQueens(n int) int {
 	ret = 0
 	dfs(0, n, 0, 0, 0)
 	return ret
