@@ -1,4 +1,4 @@
-package algorithm
+package 字符串
 
 import "testing"
 
